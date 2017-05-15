@@ -1,0 +1,43 @@
+@font-face {
+	font-family: Lucida_Console;
+	src: url("Font/Lucida_Console.ttf");
+}
+
+body {
+    background-color: black;
+    display: block;
+    margin: 0px;
+    font-family: "Lucida Console";
+    font-size: 20pt;
+}
+
+p , .userInput, .char, span, li{
+    color: white;
+    white-space: pre;
+}
+
+span.standout {
+	color: #b57920;
+	font-weight: bold;
+}
+
+a {
+    text-decoration: underline;
+    color: #6da5ff;
+}
+
+a:hover {
+    background-color: #404040;
+}
+
+#trace {
+    list-style: none;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+li:before {
+    content: ">";
+    display: block;
+    float: left;
+}

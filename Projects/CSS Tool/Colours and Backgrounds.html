@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<script type="text/javascript" src="./js/textChange.js"></script>
+<script type="text/javascript" src="./js/calculateQuiz.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Tool :: Colours & Backgrounds</title>
+<link href="./css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link href="./css/colours.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="http://szymonjackiewi.cz/">
+    <h4 class="logo">CSS TOOL</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./Colours and Backgrounds.html">COLOURS</a></li>
+        <li><a href="./Borders Margins and Padding.html">BORDERS</a></li>
+        <li><a href="./Layout and Positioning.html">LAYOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <nav id="Secondary_Menu">
+      <ul>
+        <li><a href="#about">DESCRIPTION</a></li>
+        <li><a href="#TryItOut">TRY IT OUT</a></li>
+        <li> <a href="#quiz">QUIZ</a></li>
+      </ul>
+    </nav>
+  <h2 class="hero_header">COLOURS <span class="light">&</span> BACKGROUNDS</h2>
+</section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column" id="tc1">There are three main ways of representing colour in CSS. The first one is simply stating a valid colour name, for example "red". While this method is easily readible and understandable for humans, it doenst give much control over the appearance of the colour. Another way to represent colour, is through providing a number betwen 255 and 0 (inclusive) for the amount of Red, Green and Blue the desired colour consists off. For example a vivid red would be <span class="code">rgb(255,0,0)</span>. While this is a little bit harder to understand for amatures, it provides a lot of control over the colour tone and temperature. In grayscale colours, R=G=B. The third and most common way of representing colour, is through the use of a Hexadecimal value (Hex). This consists of 6 or 3 hexadecimal digits (0 to 9 or A to F (inclucive)), which will then be used to represent the RGB value just like the last method. </p>
+    <p class="text_column" id="tc2">&nbsp;An example of a green colour &nbsp;could be represented as <span class="code">#00FF00</span> which in this case is the same as <span class="code">#0F0</span>. In this method, the first two digits represent &nbsp;the Red in the colour, second two Green and last two Blue. If each pair of digits matches, this can be reduced to 3. <br>
+      There are many different ways of using these colours in your designs of webpages. Simply specifying <span class="code">color: #0F0;</span> in CSS, will modify the colour of the text inside the selector that it is being applied to.<br>
+Backgrounds can be changed in several different ways too. Simply using <span class="code">background: #0F0;</span> would set the background to be a static colour however that could also be done through <span class="code">background-color: #0F0;</span> to make it more clear.</p>
+    <p class="text_column" id="tc3">There is one more type of background that is often applied to elements; that is an image background. This is commonly done through <span class="code">background-image: url(path_to_image_file/image.jpg);</span>. There are many ways in which this could be further modified. If the image is smaller than the element, you may want to make it repeat using: <span class="code">background-repeat:repeat;</span>. This could give a nice effect if the image is a pattern that is designed to tile (like for example a simple horisontal line pattern). If the image being used is larger than the element, it will by default be positioned in the top left corner of the element. this can be changed to be centered at all times with <span class="code">background-position:center;</span>.</p>
+  </section>
+  <!-- Parallax Section -->
+  
+  <section class="banner" id="TryItOut">
+<h2 class="parallax">TRY IT OUT!</h2>
+    <div class="button" id="cssChange" onClick="modCols()">change CSS</div>
+    <p class="parallax_description">After reading the above paragraphs, press the button on the left and see what changes on the page!<br>
+      Think about what code made these changes happpen and how you would write it!<br>
+      You can press the button several times!</p>
+</section>
+<!-- More Info Section -->
+  <section id="quiz">
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+            <p>If you have read and understood the information on this webpage, why not try doing a quiz? This will test your knowlege and understanding of this topic and provide a percentage once you click on the "Get Quiz Score" button below. You can attempt the quiz as many times as you like and if you make a mistake, re-read each question carefully and change your anwsers accordingly to figure out which question was wrong. This type of process is a useful activity that could help you remember this in the future. </p>
+            <p>The following, is a list of resources that could be useful in your revision:</p>
+            <ul>
+            	<li>Official W3 Tutorial page: <a href = "http://www.w3schools.com/css/css_colors.asp">Colors</a>, <a href = "http://www.w3schools.com/css/css_background.asp">Backgrounds</a></li>
+            </ul>
+    </article>
+    <article class="footer_column" >
+      <h3>QUIZ</h3>
+      <form id="quiz_form">
+      <p>Which of these is not a valid Hex value</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question1" id="q1a1"><label for="q1a1"><span>#268E0F</span></label></li>
+        	<li><input type="radio" name="question1" id="q1a2"><label for="q1a2"><span>#17D8T7</span></label></li>
+        	<li><input type="radio" name="question1" id="q1a3"><label for="q1a3"><span>#F36</span></label></li>
+      	</ul>
+        <p>What colour would "rgb(12, 200, 46)" represent?</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question2" id="q2a1"><label for="q2a1">Green</label></li>
+        	<li><input type="radio" name="question2" id="q2a2"><label for="q2a2">Red</label></li>
+        	<li><input type="radio" name="question2" id="q2a3"><label for="q2a3">Yellow</label></li>
+      	</ul>
+        <p>If a background image is larger than the element, what property is used to center it?</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question3" id="q3a1"><label for="q3a1">background-position: center;</label></li>
+        	<li><input type="radio" name="question3" id="q3a2"><label for="q3a2">background-center: true;</label></li>
+        	<li><input type="radio" name="question3" id="q3a3"><label for="q3a3">background-pivot: center;</label></li>
+      	</ul>
+        <p>Which of the folowing cannot be used in a property like "color: red;"</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question4" id="q4a1"><label for="q4a1">HotPink</label></li>
+        	<li><input type="radio" name="question4" id="q4a2"><label for="q4a2">WhiteSmoke</label></li>
+        	<li><input type="radio" name="question4" id="q4a3"><label for="q4a3">SeaBlue</label></li>
+      	</ul>
+      </form>
+    </article>
+  </section>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="quizScore">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <div class="button" onClick="calcQuiz([2,1,1,3])">Get Quiz Score</div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">web design project - <strong>Szymon Jackiewicz</strong> - 2016</div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>

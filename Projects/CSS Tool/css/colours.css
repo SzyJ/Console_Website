@@ -1,0 +1,15 @@
+/* When Change CSS button clicked */
+#newTC1 {
+	color: #fff;
+	background-color: #f00;
+}
+#newTC2 {
+	color: #000;
+	background-color: #0f0;	
+}
+#newTC3 {
+	color: #00f;
+	background-image: url(../images/bgImageExample.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}

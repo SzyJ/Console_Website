@@ -1,0 +1,18 @@
+/* When Change CSS button clicked */
+#newTC1 {
+	border-width: 2px;
+	border-style: dotted dashed solid double;
+	border-color: red yellow blue green;
+}
+#newTC2 {
+	border-width: 5px 1px;
+	border-style: solid;
+	padding-bottom: 300px;
+	border-color: red;
+}
+#newTC3 {
+	border-width: 5px 1px;
+	border-style: solid;
+	margin-top: 100px;
+	border-color: blue;
+}

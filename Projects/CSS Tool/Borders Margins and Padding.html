@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<script type="text/javascript" src="./js/textChange.js"></script>
+<script type="text/javascript" src="./js/calculateQuiz.js"></script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Tool :: Borders, Margins & Padding</title>
+<link href="./css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<link href="./css/borders.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="http://szymonjackiewi.cz/">
+    <h4 class="logo">CSS TOOL</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="./Colours and Backgrounds.html">COLOURS</a></li>
+        <li><a href="./Borders Margins and Padding.html">BORDERS</a></li>
+        <li><a href="./Layout and Positioning.html">LAYOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <nav id="Secondary_Menu">
+      <ul>
+        <li><a href="#about">DESCRIPTION</a></li>
+        <li><a href="#TryItOut">TRY IT OUT</a></li>
+        <li> <a href="#quiz">QUIZ</a></li>
+      </ul>
+    </nav>
+  <h2 class="hero_header">BORDERS<span class="light">,</span> MARGINS <span class="light">&</span> PADDING</h2>
+</section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column" id="tc1">Every element that is added in HTML consists of the content itself, padding, border and margin in this order from the inside to the outside. These layers can be compared that of an onion. The content has properties of width and height that can be most commonly changed with either pixels (<span class="code">px</span>) or proportion(<span class="code">%</span>), while there are many different choices for units for either of these. These values can also be set to auto which will automatically pick the smallest size of the rectangle that encloses all the content. Once the size of the content has been set, padding can be adjusted. Padding is aditional space between the content and it's border. An example of this can be seen in the buttons on this page, the text is closely enclosed as the content and the space between the text and the border is the padding. Padding can be easily set with <span class="code">padding: 14px;</span> as an example. This would set the space around the content on  each side of it equaly to 14 pixels. for finer control over this, properties like <span class="code">padding-top</span>, <span class="code">padding-right</span> and so on, can be used.</p>
+    <p class="text_column" id="tc2">Surrounding the padding of the element is the border. The border displays a rectangle around the element and it's appearance can be customised with the <span class="code">border-style</span> property which can take a large variaty of different types such as <span class="code">dotted</span>, <span class="code">solid</span>, <span class="code">double</span> and many more. If you dont want the border to show, it will have the width of 0 by default meaning that it will be invisible on the website, alternatively, <span class="code">border-style: none;</span> can be used. Again, an example of this can be seen in a button object on this page. The button has a white border that is solid. borders can also be applied to one side of the element only like <span class="code">border-right-style</span> and so on. The colour of the border can be set in a very similar way with the <span class="code">border-color</span> property.<br>
+The most outer layer of all elements is the margin. The margin is used to add space around the border and is always transparent. Just like the other properties, the margin can be applied to either all sides at once, or to each side seperately.</p>
+    <p class="text_column" id="tc3">This way of ogranising content is known as the "CSS Box Model" and is very important to layout of your webiste. It allows you to think about each object on the page as a rectange and makes it easier to design websites. The overall height of the full element, can be calculated as <span class="code">height</span> + <span class="code">padding-bottom</span> + <span class="code">padding-top</span> + <span class="code">border-bottom-width</span> + <span class="code">border-top-width</span> + <span class="code">margin-bottom</span> + <span class="code">margin-top</span>.</p>
+  </section>
+  <!-- Parallax Section -->
+  
+  <section class="banner" id="TryItOut">
+<h2 class="parallax">TRY IT OUT!</h2>
+    <div class="button" id="cssChange" onClick="modCols()">change CSS</div>
+    <p class="parallax_description">After reading the above paragraphs, press the button on the left and see what changes on the page!<br>
+      Think about what code made these changes happpen and how you would write it!<br>
+      You can press the button several times!</p>
+</section>
+<!-- More Info Section -->
+  <section id="quiz">
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+            <p>If you have read and understood the information on this webpage, why not try doing a quiz? This will test your knowlege and understanding of this topic and provide a percentage once you click on the "Get Quiz Score" button below. You can attempt the quiz as many times as you like and if you make a mistake, re-read each question carefully and change your anwsers accordingly to figure out which question was wrong. This type of process is a useful activity that could help you remember this in the future. </p>
+            <p>The following, is a list of resources that could be useful in your revision:</p>
+            <ul>
+            	<li>Official W3 Tutorial page: <a href = "http://www.w3schools.com/css/css_border.asp">Boarders</a>, <a href = "http://www.w3schools.com/css/css_margin.asp">Margins</a>, <a href = "http://www.w3schools.com/css/css_padding.asp">Padding</a></li>
+                <li>Youtube video playlist by EJ Media: <a href = "https://www.youtube.com/watch?v=3n9UbOvMZ30&list=PLr6-GrHUlVf8JIgLcu3sHigvQjTw_aC9C&index=17">Box Model: Part 1</a></li>
+            </ul>
+    </article>
+    <article class="footer_column" >
+      <h3>QUIZ</h3>
+      <form id="quiz_form">
+      <p>If I fill the background of an element with a still colour, which part will be transparent? </p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question1" id="q1a1"><label for="q1a1"><span>Content</span></label></li>
+        	<li><input type="radio" name="question1" id="q1a2"><label for="q1a2"><span>Padding</span></label></li>
+        	<li><input type="radio" name="question1" id="q1a3"><label for="q1a3"><span>Margin</span></label></li>
+      	</ul>
+        <p>Which border style cannot be used?</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question2" id="q2a1"><label for="q2a1">Outset</label></li>
+        	<li><input type="radio" name="question2" id="q2a2"><label for="q2a2">Inset</label></li>
+        	<li><input type="radio" name="question2" id="q2a3"><label for="q2a3">Random</label></li>
+      	</ul>
+        <p>what is the total width of an element after "width: 3px; padding: 5px 10px; border-width: 0px margin-bottom: 3px"</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question3" id="q3a1"><label for="q3a1">23</label></li>
+        	<li><input type="radio" name="question3" id="q3a2"><label for="q3a2">26</label></li>
+        	<li><input type="radio" name="question3" id="q3a3"><label for="q3a3">21</label></li>
+      	</ul>
+        <p>What is the correct shorthand for defining a border?</p>
+     	 <ul class="question">
+      		<li><input type="radio" name="question4" id="q4a1"><label for="q4a1">border: solid 5px gray;</label></li>
+        	<li><input type="radio" name="question4" id="q4a2"><label for="q4a2">border: 5px solid gray;</label></li>
+        	<li><input type="radio" name="question4" id="q4a3"><label for="q4a3">border: 5px gray solid;</label></li>
+      	</ul>
+      </form>
+    </article>
+  </section>
+  <!-- Footer Section -->
+  <section class="footer_banner" id="quizScore">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <div class="button" onClick="calcQuiz([3,3,1,2])">Get Quiz Score</div>
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">web design project - <strong>Szymon Jackiewicz</strong> - 2016</div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>

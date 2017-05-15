@@ -1,0 +1,10 @@
+/* When Change CSS button clicked */
+#newTC1 {
+	position: fixed;
+}
+#newTC2 {
+	position: absolute;
+}
+#newTC3 {
+	position: static;
+}
