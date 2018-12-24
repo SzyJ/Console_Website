@@ -1,6 +1,6 @@
 var shiftPressed = false;
 
-var possibleCommands = ["projects", "cv", "help", "about",  "clear", "biography", "title", "progxp", "links", "github", "youtube", "twitch", "facebook", "reddit"];
+var possibleCommands = ["projects", "cv", "help", "about",  "clear", "biography", "title", "progxp", "links", "github", "youtube", "twitch", "facebook", "reddit", "bookmarks"];
 
 
 var userInput = "";
@@ -250,6 +250,9 @@ function checkCommand(input) {
              break;
          case "reddit":
              website("https://www.reddit.com/", "Reddit");
+             break;
+		 case "bookmarks":
+             website("http://szymonjackiewi.cz/homepage./", "homepage");
              break;
 		 case "projects":
              projectList();

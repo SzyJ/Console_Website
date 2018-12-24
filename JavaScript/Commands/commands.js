@@ -145,9 +145,10 @@ function website(url, website) {
 
 function projectList() {
 	name = "Projects";
-	outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github</a>");
-	outputAppLine(name, "Web Design CSS tutorial webiste: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\">CSS Tool</a>");
 	outputAppLine(name, "University 3rd Year Dissertation: <a href = \"https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FSzyJ%2FPeer-to-Peer_Game_Networking&target=Report%2Fmain.tex&command=pdflatex&trackId=1541076944260\" target=\"_blank\">LaTeX PDF</a> <a href = \"https://github.com/SzyJ/CH_GNAT\" target=\"_blank\">Project Link</a>");
+	outputAppLine(name, "Customisable Bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\">homepage.</a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
+	outputAppLine(name, "Web Design CSS tutorial webiste: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\">CSS Tool</a>");
+	outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
 }
 
 

@@ -14,8 +14,11 @@ p , .userInput, .char, span, li{
 }
 
 u {
-  -webkit-text-decoration-color: white; /* safari still uses vendor prefix */
+  -webkit-text-decoration-color: white;
   text-decoration-color: white;
+  
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
 	
 }
 
@@ -51,4 +54,26 @@ li:before {
 
 img {
 	height: 0.7em;
+}
+
+@keyframes blink-animation {
+  from {
+	-webkit-text-decoration-color: white;
+    text-decoration-color: white;
+  }
+  to {
+    -webkit-text-decoration-color: black;
+    text-decoration-color: black;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  from {
+	-webkit-text-decoration-color: white;
+    text-decoration-color: white;
+  }
+  to {
+    -webkit-text-decoration-color: black;
+    text-decoration-color: black;
+  }
 }

@@ -11,7 +11,7 @@ Includes:
   - 2 random HTML files and 1 CSS file found on CPanel not written by me.
 
 Known issues and porblems:
-  - Currently does not work well on mobile or Linux, will add the console style to fix this soon.
+  - Some characters (e.g. tab) have actions within the browser window. I am looking for a way to disable this behaviour.
   - Any information about forcing the virtual keyboard to open on mobile devices, would be useful!
 
 -Szymon Jackiewicz
