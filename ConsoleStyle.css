@@ -1,19 +1,22 @@
-@font-face {
-	font-family: Lucida_Console;
-	src: url("Font/Lucida_Console.ttf");
-}
+@import url('https://fonts.googleapis.com/css?family=VT323');
 
 body {
     background-color: black;
     display: block;
     margin: 0px;
-    font-family: "Lucida Console";
+    font-family: 'VT323', monospace;
     font-size: 20pt;
 }
 
 p , .userInput, .char, span, li{
     color: white;
     white-space: pre;
+}
+
+u {
+  -webkit-text-decoration-color: white; /* safari still uses vendor prefix */
+  text-decoration-color: white;
+	
 }
 
 span.standout {
@@ -36,8 +39,16 @@ a:hover {
     padding-left: 0px;
 }
 
+#suggestion {
+	color: gray;
+}
+
 li:before {
     content: ">";
     display: block;
     float: left;
+}
+
+img {
+	height: 0.7em;
 }

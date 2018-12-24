@@ -1,15 +1,50 @@
 var shiftPressed = false;
 
+var possibleCommands = ["projects", "cv", "help", "about",  "clear", "biography", "title", "progxp", "links", "github", "youtube", "twitch", "facebook", "reddit"];
+
+
 var userInput = "";
+var suggestion = "";
 var cursorPos = 0;
-var cursorShowing
+var cursorShowing;
 
 function updateUserInput() {
-    var tempString = userInput + " ";
+    var tempString;
 
-    document.getElementById("userInput").innerHTML = tempString.substring(0, cursorPos) + "<u>" + tempString.charAt(cursorPos) + "</u>" + tempString.substring(cursorPos + 1, userInput.length);
+	if (userInput == "") {
+		suggestion = "";
+	} else {
+		for (var i = 0; i < possibleCommands.length; i++) {
+			if (possibleCommands[i].length < userInput.length) {
+				suggestion = "";
+			} else if (possibleCommands[i].startsWith(userInput)) {
+				suggestion = possibleCommands[i].substring(userInput.length, possibleCommands[i].length);
+				break;
+			}
+		}	
+	}
+	
+	
+	
+	if (suggestion) {
+		tempString = userInput + suggestion;
+		if (cursorPos < userInput.length) {
+			document.getElementById("userInput").innerHTML = tempString.substring(0, cursorPos) + "<u>" + tempString.charAt(cursorPos) + "</u>" + tempString.substring(cursorPos + 1, userInput.length);
+				
+			document.getElementById("suggestion").innerHTML = suggestion;
+		} else {
+			document.getElementById("userInput").innerHTML = userInput;
+			
+			document.getElementById("suggestion").innerHTML = "<u>" + suggestion.charAt(0) + "</u>" + suggestion.substring(1, suggestion.length);
+		}
+	} else {
+		tempString = userInput + " ";
+		document.getElementById("userInput").innerHTML = tempString.substring(0, cursorPos) + "<u>" + tempString.charAt(cursorPos) + "</u>" + tempString.substring(cursorPos + 1, userInput.length);
+		
+		document.getElementById("suggestion").innerHTML = "";
+	}
 
-    //document.getElementById("test").innerHTML = "cp: " + cursorPos + ", len: " + userInput.length;
+    //document.getElementById("test").innerHTML = "ui: " + userInput + ", sug: " + suggestion;
 }
 
 window.onload = function() {
@@ -148,10 +183,19 @@ window.onkeydown = function(e) {
     }
 
     if (keyCode == 13) { //enter
-         checkCommand(userInput);
+         checkCommand(userInput + suggestion);
          userInput = "";
          cursorPos = 0;
     }
+	
+	if (keyCode == 9) { //tab
+         userInput = userInput + suggestion;
+		 suggestion = "";
+         cursorPos = userInput.length;
+		 
+		 event.stopPropagation();
+    }
+	
     updateUserInput();
 }
 
@@ -200,9 +244,6 @@ function checkCommand(input) {
              break;
          case "recursion":
              website("http://www.szymonjackiewi.cz", "SJ");
-             break;
-         case "facebook":
-             website("https://www.facebook.com/", "Facebook");
              break;
          case "facebook":
              website("https://www.facebook.com/", "Facebook");
