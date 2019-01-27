@@ -54,7 +54,7 @@ li:before {
 }
 
 li.cmd:before {
-    content: ">";
+    content: "    ";
 }
 
 li.usr:before {
