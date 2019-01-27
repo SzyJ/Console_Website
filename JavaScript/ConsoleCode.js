@@ -21,26 +21,26 @@ function updateUserInput() {
 				suggestion = possibleCommands[i].substring(userInput.length, possibleCommands[i].length);
 				break;
 			}
-		}	
+		}
 	}
-	
-	
-	
+
+
+
 	if (suggestion) {
 		tempString = userInput + suggestion;
 		if (cursorPos < userInput.length) {
 			document.getElementById("userInput").innerHTML = tempString.substring(0, cursorPos) + "<u>" + tempString.charAt(cursorPos) + "</u>" + tempString.substring(cursorPos + 1, userInput.length);
-				
+
 			document.getElementById("suggestion").innerHTML = suggestion;
 		} else {
 			document.getElementById("userInput").innerHTML = userInput;
-			
+
 			document.getElementById("suggestion").innerHTML = "<u>" + suggestion.charAt(0) + "</u>" + suggestion.substring(1, suggestion.length);
 		}
 	} else {
 		tempString = userInput + " ";
 		document.getElementById("userInput").innerHTML = tempString.substring(0, cursorPos) + "<u>" + tempString.charAt(cursorPos) + "</u>" + tempString.substring(cursorPos + 1, userInput.length);
-		
+
 		document.getElementById("suggestion").innerHTML = "";
 	}
 
@@ -60,7 +60,7 @@ window.onkeyup = function(e) {
     if (shiftPressed == true && keyCode == 16) {
         shiftPressed = false;
     }
-    
+
 
 
 }
@@ -96,7 +96,7 @@ window.onkeydown = function(e) {
         }
     } else if (keyCode >= 48 && keyCode <= 57) {	//number or number symbols
 	if (shiftPressed) {	//upper case letter
-             
+
         } else {		//lower case letter
              typeChar(keyCode);//add ascii character ascii(key + 32);
         }
@@ -115,13 +115,13 @@ window.onkeydown = function(e) {
          userInput = userInput.substring(0, cursorPos - 1) + userInput.substring(cursorPos, userInput.length);
          cursorPos--;
     }
-    
+
     if (keyCode == 46 && cursorPos < userInput.length) { //delete
          userInput = userInput.substring(0, cursorPos) + userInput.substring(cursorPos + 1, userInput.length);
     }
 
-  
-	
+
+
 	if (keyCode == 188 || (keyCode >= 190&& keyCode <= 192)) { // comma, dot, slash keys
 		if (shiftPressed) {
 			//typeChar(keyCode - 128);	// Less than, greater than, Question mark
@@ -129,7 +129,7 @@ window.onkeydown = function(e) {
 			typeChar(keyCode - 144);	// comma, dot or slash
 		}
     }
-	
+
 	if (keyCode == 221 || keyCode == 119) { // [ and ] keys
 		if (shiftPressed) {
 			typeChar(keyCode + 4);	// braces  {}
@@ -137,7 +137,7 @@ window.onkeydown = function(e) {
 			typeChar(keyCode - 28);	// brackets []
 		}
     }
-	
+
 	if (keyCode == 222) { // quote key
 		if (shiftPressed) {
 			typeChar(34);	// double quote "
@@ -145,7 +145,7 @@ window.onkeydown = function(e) {
 			typeChar(39);	// single quote '
 		}
     }
-	
+
 	if (keyCode == 186) { // ; key
 		if (shiftPressed) {
 			typeChar(58);	// :
@@ -153,7 +153,7 @@ window.onkeydown = function(e) {
 			typeChar(59);	// ;
 		}
     }
-	
+
 	if (keyCode == 187) { // = key
 		if (shiftPressed) {
 			typeChar(43);	// +
@@ -161,7 +161,7 @@ window.onkeydown = function(e) {
 			typeChar(61);	// =
 		}
     }
-	
+
 	if (keyCode == 189) { // - key
 		if (shiftPressed) {
 			typeChar(95);	// _
@@ -169,7 +169,7 @@ window.onkeydown = function(e) {
 			typeChar(45);	// -
 		}
     }
-	
+
 	if (keyCode == 220) { // \ key
 		if (shiftPressed) {
 			typeChar(124);	//  pipe |
@@ -177,7 +177,7 @@ window.onkeydown = function(e) {
 			typeChar(92);	// backslash
 		}
     }
-	
+
 	if (keyCode == 32) { //space
         typeChar(keyCode);
     }
@@ -187,21 +187,21 @@ window.onkeydown = function(e) {
          userInput = "";
          cursorPos = 0;
     }
-	
+
 	if (keyCode == 9) { //tab
          userInput = userInput + suggestion;
 		 suggestion = "";
          cursorPos = userInput.length;
-		 
+
 		 event.stopPropagation();
     }
-	
+
     updateUserInput();
 }
 
 
 function checkCommand(input) {
-     outputLine(userInput);
+    outputLine(input);
      switch(input.toLowerCase()) {
          case "clear":
              clear();
@@ -265,6 +265,7 @@ function checkCommand(input) {
 function outputLine(string) {
     var ul = document.getElementById("trace");
     var li = document.createElement("li");
+    li.className = "usr";
     li.appendChild(document.createTextNode(" " + string));
     ul.appendChild(li);
     document.getElementById("trace").lastChild.innerHTML = " " + string;
@@ -274,6 +275,7 @@ function outputLine(string) {
 function outputAppLine(appName, string) {
     var ul = document.getElementById("trace");
     var li = document.createElement("li");
+    li.className = "cmd";
     li.appendChild(document.createTextNode(appName + "> " + string));
     ul.appendChild(li);
     document.getElementById("trace").lastChild.innerHTML = appName + "> " + string;

@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body {
     background-color: black;
     display: block;
     margin: 0px;
-    font-family: 'VT323', monospace;
-    font-size: 20pt;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15pt;
 }
 
 p , .userInput, .char, span, li{
@@ -16,10 +16,10 @@ p , .userInput, .char, span, li{
 u {
   -webkit-text-decoration-color: white;
   text-decoration-color: white;
-  
+
   animation: blink-animation 1s steps(2, start) infinite;
   -webkit-animation: blink-animation 1s steps(2, start) infinite;
-	
+
 }
 
 span.standout {
@@ -32,8 +32,9 @@ a {
     color: #6da5ff;
 }
 
-a:hover {
+a:hover , .sugg:hover {
     background-color: #404040;
+    cursor: pointer;
 }
 
 #trace {
@@ -47,9 +48,26 @@ a:hover {
 }
 
 li:before {
-    content: ">";
     display: block;
     float: left;
+
+}
+
+li.cmd:before {
+    content: ">";
+}
+
+li.usr:before {
+    content: "[User]$";
+}
+
+li.usr:before , #char {
+    color: #776a40;
+	font-weight: bold;
+}
+
+li.usr , #userInput {
+    color: #efdda0;
 }
 
 img {
