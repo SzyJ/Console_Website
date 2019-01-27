@@ -8,7 +8,7 @@ Includes:
   - 2 JavaScript files for website logic
   - CSS File for styling the website to imitate a command line
   - Simple HTML file
-  - 2 random HTML files and 1 CSS file found on CPanel not written by me.
+
 
 Known issues and porblems:
   - Some characters (e.g. tab) have actions within the browser window. I am looking for a way to disable this behaviour.
