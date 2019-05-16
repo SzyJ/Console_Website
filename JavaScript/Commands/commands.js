@@ -3,10 +3,8 @@ var commandList = ["projects", "cv", "clear", "about", "help", "biography", "tit
 function about() {
     name = "about";
     outputAppLine(name, "Website designed and implemented enirely by me. Purely made for fun!");
-    outputAppLine(name, "Original idea concept credit: Baizel Mathew, tyty bro!");
-	outputAppLine(name, "Icons made by <a href=\"https://www.freepik.com/\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" 			    title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" 			    title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>");
-
-
+    outputAppLine(name, "Original idea concept credit: <a href=\"https://baizel.dev/\" target=\"_blank\">Baizel Mathew</a>, tyty bro!");
+	outputAppLine(name, "Icons made by <a href=\"https://www.freepik.com/\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" 			    title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>");
 }
 
 function biography() {
@@ -19,12 +17,12 @@ function biography() {
     outputAppLine(name, "                  EventPad Research Intern");
     outputAppLine(name, "                  Installation of low voltage appliances");
     outputAppLine(name, " ");
-    outputAppLine(name, "Spoken Languages: English (prefered, fluent), Polish (fluent), Japanese (beginner)");
+    outputAppLine(name, "Spoken Languages: English (preferred, fluent), Polish (fluent), Japanese (beginner)");
     outputAppLine(name, "Live in:          Newcastle-Upon-Tyne & Manchester");
     outputAppLine(name, "Hobbies:          Making things in Photoshop");
     outputAppLine(name, "                  Programming");
     outputAppLine(name, "                  Drinking and brewing Tea");
-    outputAppLine(name, "                  Skiing and Skydiving");
+    outputAppLine(name, "                  Skiing, Snowboarding and Skydiving");
 }
 
 function clear() {
@@ -47,20 +45,9 @@ function help() {
 function title() {
     name = "title";
 
-
-
-
-
-
-
-
-
 	outputAppLine(name, " __                                                ");
 	outputAppLine(name, "(_  _  \\/__  _ __      | _  _  |  o  _     o  _  _ ");
 	outputAppLine(name, "__) /_ / |||(_)| |   \\_|(_|(_  |< | (/_\\^/ | (_  /_");
-
-
-
 }
 
 function helloWorld() {
@@ -89,7 +76,7 @@ function programming() {
     outputAppLine(name, "       VB.net  |=========================|");
     outputAppLine(name, "         Java  |=====================================================|");
     outputAppLine(name, "   HTML & CSS  |=============================|");
-    outputAppLine(name, "   JavaScript  |==================================|");
+    outputAppLine(name, "   JavaScript  |===================================|");
     outputAppLine(name, "      C / C++  |====================================================|");
 	outputAppLine(name, " GLSL Shaders  |============================|");
 }
@@ -146,10 +133,10 @@ function website(url, website) {
 
 function projectList() {
 	name = "Projects";
-	outputAppLine(name, "University 3rd Year Dissertation[Networking in Games]: <a href = \"https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FSzyJ%2FPeer-to-Peer_Game_Networking&target=Report%2Fmain.tex&command=pdflatex&trackId=1541076944260\" target=\"_blank\">LaTeX PDF</a> <a href = \"https://github.com/SzyJ/CH_GNAT\" target=\"_blank\">Project Link</a>");
+	outputAppLine(name, "University 3rd Year Dissertation[Networking in Games]: <a href = \"https://github.com/SzyJ/Game_Networking_Models/raw/master/Dissertation/main.pdf\" target=\"_blank\">Dissertation PDF</a> <a href = \"https://github.com/SzyJ/GNAT_Core\" target=\"_blank\">Project Link</a>");
 
-    outputAppLine(name, "Multiplayer platforming shooter game[Comming Soon]: <a href = \"https://github.com/SzyJ/LoveTap\" target=\"_blank\">GameName</a>");
-	outputAppLine(name, "Customisable Bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\">homepage.</a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
+    outputAppLine(name, "Platforming shooter game[Unity Game Project]: <a href = \"http://szymonjackiewi.cz/Projects/Flip/\" target=\"_blank\">Flip</a>");
+	outputAppLine(name, "Customisable bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\">homepage.</a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
 	outputAppLine(name, "Web Design CSS tutorial webiste: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\">CSS Tool</a>");
 	outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
 }
