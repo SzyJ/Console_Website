@@ -12,7 +12,7 @@ function biography() {
     outputAppLine(name, "Occupation:       Undergraduate Student");
     outputAppLine(name, "University:       Newcastle University");
     outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) 3rd Year");
-    outputAppLine(name, "Work Experiance:  PCMS Software Developer");
+    outputAppLine(name, "Work Experience:  PCMS Software Developer");
     outputAppLine(name, "                  CEX Shop Assistant");
     outputAppLine(name, "                  EventPad Research Intern");
     outputAppLine(name, "                  Installation of low voltage appliances");
@@ -76,7 +76,7 @@ function programming() {
     outputAppLine(name, "       VB.net  |=========================|");
     outputAppLine(name, "         Java  |=====================================================|");
     outputAppLine(name, "   HTML & CSS  |=============================|");
-    outputAppLine(name, "   JavaScript  |===================================|");
+    outputAppLine(name, "   JavaScript  |==================================|");
     outputAppLine(name, "      C / C++  |====================================================|");
 	outputAppLine(name, " GLSL Shaders  |============================|");
 }
@@ -96,7 +96,7 @@ function links() {
      outputAppLine(name, "<img src=\"data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIHBvaW50cz0iNDc4LjYwOSwxNDQuNjk2IDQ3OC42MDksMTExLjMwNCA0MTEuODI2LDExMS4zMDQgNDExLjgyNiwxNDQuNjk2IDM3OC40MzUsMTQ0LjY5NiAgIDM3OC40MzUsMCAzNzguNDM1LDAgMzc4LjQzNSwwIDAsMCAwLDAgMCwwIDAsNTEyIDM3OC40MzUsNTEyIDM3OC40MzUsMzExLjY1MiA0MTEuODI2LDMxMS42NTIgNDExLjgyNiwyNzguMjYxIDQ0NS4yMTcsMjc4LjI2MSAgIDQ0NS4yMTcsMjQ0Ljg3IDQ3OC42MDksMjQ0Ljg3IDQ3OC42MDksMjExLjQ3OCA1MTIsMjExLjQ3OCA1MTIsMTQ0LjY5NiAiLz4KPHBvbHlnb24gc3R5bGU9ImZpbGw6I0ZGREFBQTsiIHBvaW50cz0iNDc4LjYwOSwxNDQuNjk2IDQ3OC42MDksMTExLjMwNCA0MTEuODI2LDExMS4zMDQgNDExLjgyNiwxNDQuNjk2IDM3OC40MzUsMTQ0LjY5NiAgIDM3OC40MzUsMTc4LjA4NyAzNDUuMDQzLDE3OC4wODcgMzQ1LjA0MywyMTEuNDc4IDMxMS42NTIsMjExLjQ3OCAzMTEuNjUyLDI0NC44NyAyNzguMjYxLDI0NC44NyAyNzguMjYxLDI3OC4yNjEgMjQ0Ljg3LDI3OC4yNjEgICAyNDQuODcsMzExLjY1MiAyMTEuNDc4LDMxMS42NTIgMjExLjQ3OCwzNDUuMDQzIDE3OC4wODcsMzQ1LjA0MyAxNzguMDg3LDQ0NS4yMTcgMjc4LjI2MSw0NDUuMjE3IDI3OC4yNjEsNDExLjgyNiAzMTEuNjUyLDQxMS44MjYgICAzMTEuNjUyLDM3OC40MzUgMzQ1LjA0MywzNzguNDM1IDM0NS4wNDMsMzQ1LjA0MyAzNzguNDM1LDM0NS4wNDMgMzc4LjQzNSwzMTEuNjUyIDQxMS44MjYsMzExLjY1MiA0MTEuODI2LDI3OC4yNjEgICA0NDUuMjE3LDI3OC4yNjEgNDQ1LjIxNywyNDQuODcgNDc4LjYwOSwyNDQuODcgNDc4LjYwOSwyMTEuNDc4IDUxMiwyMTEuNDc4IDUxMiwxNDQuNjk2ICIvPgo8cG9seWdvbiBzdHlsZT0iZmlsbDojRkY5ODExOyIgcG9pbnRzPSI0NzguNjA5LDE0NC42OTYgNDc4LjYwOSwxMTEuMzA0IDQxMS44MjYsMTExLjMwNCA0MTEuODI2LDE0NC42OTYgMzc4LjQzNSwxNDQuNjk2ICAgMzc4LjQzNSwxNzguMDg3IDM0NS4wNDMsMTc4LjA4NyAzNDUuMDQzLDIxMS40NzggMzExLjY1MiwyMTEuNDc4IDMxMS42NTIsMjQ0Ljg3IDI3OC4yNjEsMjQ0Ljg3IDI3OC4yNjEsMjc4LjI2MSAyNDQuODcsMjc4LjI2MSAgIDI0NC44NywzMTEuNjUyIDIxMS40NzgsMzExLjY1MiAyMTEuNDc4LDM0NS4wNDMgMjQ0Ljg3LDM0NS4wNDMgMjQ0Ljg3LDM3OC40MzUgMjc4LjI2MSwzNzguNDM1IDI3OC4yNjEsNDExLjgyNiAzMTEuNjUyLDQxMS44MjYgICAzMTEuNjUyLDM3OC40MzUgMzQ1LjA0MywzNzguNDM1IDM0NS4wNDMsMzQ1LjA0MyAzNzguNDM1LDM0NS4wNDMgMzc4LjQzNSwzMTEuNjUyIDQxMS44MjYsMzExLjY1MiA0MTEuODI2LDI3OC4yNjEgICA0NDUuMjE3LDI3OC4yNjEgNDQ1LjIxNywyNDQuODcgNDc4LjYwOSwyNDQuODcgNDc4LjYwOSwyMTEuNDc4IDUxMiwyMTEuNDc4IDUxMiwxNDQuNjk2ICIvPgo8cG9seWdvbiBzdHlsZT0iZmlsbDojRkZGRkZGOyIgcG9pbnRzPSI0NzguNjA5LDE0NC42OTYgNDc4LjYwOSwxMTEuMzA0IDQxMS44MjYsMTExLjMwNCA0MTEuODI2LDE3OC4wODcgNDQ1LjIxNywxNzguMDg3ICAgNDQ1LjIxNywyMTEuNDc4IDUxMiwyMTEuNDc4IDUxMiwxNDQuNjk2ICIvPgo8cG9seWdvbiBwb2ludHM9IjM3OC40MzUsMzExLjY1MiAzNDUuMDQzLDMxMS42NTIgMzQ1LjA0MywzNDUuMDQzIDMxMS42NTIsMzQ1LjA0MyAzMTEuNjUyLDM3OC40MzUgMzQ1LjA0MywzNzguNDM1ICAgMzQ1LjA0Myw0NzguNjA5IDMzLjM5MSw0NzguNjA5IDMzLjM5MSwzMy4zOTEgMzQ1LjA0MywzMy4zOTEgMzQ1LjA0MywyMTEuNDc4IDMxMS42NTIsMjExLjQ3OCAzMTEuNjUyLDI0NC44NyAzNDUuMDQzLDI0NC44NyAgIDM0NS4wNDMsMjExLjQ3OCAzNzguNDM1LDIxMS40NzggMzc4LjQzNSwyMTEuNDc4IDM3OC40MzUsMjExLjQ3OCAzNzguNDM1LDE3OC4wODcgNDExLjgyNiwxNzguMDg3IDQxMS44MjYsMTQ0LjY5NiAgIDM3OC40MzUsMTQ0LjY5NiAzNzguNDM1LDAgMzc4LjQzNSwwIDM3OC40MzUsMCAwLDAgMCwwIDAsMCAwLDUxMiAzNzguNDM1LDUxMiAzNzguNDM1LDMxMS42NTIgIi8+CjxyZWN0IHg9Ijc3LjkxMyIgeT0iNzcuOTEzIiB3aWR0aD0iMjIyLjYwOSIgaGVpZ2h0PSIzMy4zOTEiLz4KPHJlY3QgeD0iNzcuOTEzIiB5PSIxNTUuODI2IiB3aWR0aD0iMjIyLjYwOSIgaGVpZ2h0PSIzMy4zOTEiLz4KPHJlY3QgeD0iMzc4LjQzNSIgeT0iMjc4LjI2MSIgd2lkdGg9IjMzLjM5MSIgaGVpZ2h0PSIzMy4zOTEiLz4KPHJlY3QgeD0iNDExLjgyNiIgeT0iMjQ0Ljg3IiB3aWR0aD0iMzMuMzkxIiBoZWlnaHQ9IjMzLjM5MSIvPgo8cmVjdCB4PSI0NDUuMjE3IiB5PSIyMTEuNDc4IiB3aWR0aD0iMzMuMzkxIiBoZWlnaHQ9IjMzLjM5MSIvPgo8cmVjdCB4PSI0NzguNjA5IiB5PSIxNDQuNjk2IiB3aWR0aD0iMzMuMzkxIiBoZWlnaHQ9IjY2Ljc4MyIvPgo8cmVjdCB4PSIyMTEuNDc4IiB5PSIzMTEuNjUyIiB3aWR0aD0iMzMuMzkxIiBoZWlnaHQ9IjMzLjM5MSIvPgo8cmVjdCB4PSIyNDQuODciIHk9IjI3OC4yNjEiIHdpZHRoPSIzMy4zOTEiIGhlaWdodD0iMzMuMzkxIi8+CjxyZWN0IHg9IjI3OC4yNjEiIHk9IjI0NC44NyIgd2lkdGg9IjMzLjM5MSIgaGVpZ2h0PSIzMy4zOTEiLz4KPHJlY3QgeD0iNDExLjgyNiIgeT0iMTExLjMwNCIgd2lkdGg9IjY2Ljc4MyIgaGVpZ2h0PSIzMy4zOTEiLz4KPHBvbHlnb24gcG9pbnRzPSIxNzguMDg3LDQxMS44MjYgNzcuOTEzLDQxMS44MjYgNzcuOTEzLDQ0NS4yMTcgMjc4LjI2MSw0NDUuMjE3IDI3OC4yNjEsNDExLjgyNiAzMTEuNjUyLDQxMS44MjYgMzExLjY1MiwzNzguNDM1ICAgMjc4LjI2MSwzNzguNDM1IDI3OC4yNjEsNDExLjgyNiAyMTEuNDc4LDQxMS44MjYgMjExLjQ3OCwzNDUuMDQzIDE3OC4wODcsMzQ1LjA0MyAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==\" /> <a href = \"https://github.com/SzyJ/CV/raw/master/cv.pdf\" target=\"_blank\">Download Full CV PDF</a>");
 }
 
-function workExperiance() {
+function workExperience() {
     name = "workXP";
     outputAppLine(name, "To be added, check back later!! =)");
 }
@@ -111,7 +111,7 @@ function cv() {
     name = "CV";
     outputAppLine(name, " ");
     outputAppLine(name, "--------------------------------");
-    outputAppLine(name, "---  <span class=\"standout\">Programming Experiance</span>  ---");
+    outputAppLine(name, "---  <span class=\"standout\">Programming Experience</span>  ---");
     outputAppLine(name, "--------------------------------");
     programming();
 
@@ -137,6 +137,6 @@ function projectList() {
 
     outputAppLine(name, "Platforming shooter game[Unity Game Project]: <a href = \"http://szymonjackiewi.cz/Projects/Flip/\" target=\"_blank\">Flip</a>");
 	outputAppLine(name, "Customisable bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\">homepage.</a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
-	outputAppLine(name, "Web Design CSS tutorial webiste: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\">CSS Tool</a>");
+	outputAppLine(name, "Web Design CSS tutorial website: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\">CSS Tool</a>");
 	outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
 }
