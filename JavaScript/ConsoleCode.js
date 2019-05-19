@@ -6,7 +6,6 @@ var possibleCommands = ["projects", "cv", "help", "about",  "clear", "biography"
 var userInput = "";
 var suggestion = "";
 var cursorPos = 0;
-var cursorShowing;
 
 function updateUserInput() {
     var tempString;
@@ -52,28 +51,28 @@ window.onload = function() {
     help();
 
     updateUserInput();
-}
+};
 
 window.onkeyup = function(e) {
-    var keyCode = event.keyCode;
-
-    if (shiftPressed == true && keyCode == 16) {
+    //TODO: KeyCode is deprecated need to update
+    let keyCode = e.keyCode;
+    if (shiftPressed && keyCode === 16) {
         shiftPressed = false;
     }
-
-
-
-}
+};
 
 function typeChar(keyCode) {
-	var character;
+	let character;
 	switch(keyCode) {
 		case 60:
 			character = "&lt;";
+			break;
 		case 62:
 			character = "&gt";
+            break;
 		case 34:
 			character = "&quot";
+            break;
 		default:
 			character = String.fromCharCode(keyCode);
 	}
@@ -82,9 +81,10 @@ function typeChar(keyCode) {
 }
 
 window.onkeydown = function(e) {
-    var keyCode = event.keyCode;
+    //TODO: KeyCode is deprecated need to update
+    var keyCode = e.keyCode;
 
-    if (shiftPressed == false && keyCode == 16) {
+    if (!shiftPressed && keyCode === 16) {
         shiftPressed = true;
     }
 
@@ -102,27 +102,27 @@ window.onkeydown = function(e) {
         }
     }
 
-    if (keyCode == 37 && cursorPos > 0) {// left arrow
+    if (keyCode === 37 && cursorPos > 0) {// left arrow
         cursorPos--;
     }
 
-    if (keyCode == 39 && cursorPos < userInput.length) {	//right arrow
+    if (keyCode === 39 && cursorPos < userInput.length) {	//right arrow
         cursorPos++;
         window.scrollTo(0,document.body.scrollWidth);
     }
 
-    if (keyCode == 8 && cursorPos > 0) { //backspace
+    if (keyCode === 8 && cursorPos > 0) { //backspace
          userInput = userInput.substring(0, cursorPos - 1) + userInput.substring(cursorPos, userInput.length);
          cursorPos--;
     }
 
-    if (keyCode == 46 && cursorPos < userInput.length) { //delete
+    if (keyCode === 46 && cursorPos < userInput.length) { //delete
          userInput = userInput.substring(0, cursorPos) + userInput.substring(cursorPos + 1, userInput.length);
     }
 
 
 
-	if (keyCode == 188 || (keyCode >= 190&& keyCode <= 192)) { // comma, dot, slash keys
+	if (keyCode === 188 || (keyCode >= 190&& keyCode <= 192)) { // comma, dot, slash keys
 		if (shiftPressed) {
 			//typeChar(keyCode - 128);	// Less than, greater than, Question mark
 		} else {
@@ -130,7 +130,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 221 || keyCode == 119) { // [ and ] keys
+	if (keyCode === 221 || keyCode === 119) { // [ and ] keys
 		if (shiftPressed) {
 			typeChar(keyCode + 4);	// braces  {}
 		} else {
@@ -138,7 +138,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 222) { // quote key
+	if (keyCode === 222) { // quote key
 		if (shiftPressed) {
 			typeChar(34);	// double quote "
 		} else {
@@ -146,7 +146,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 186) { // ; key
+	if (keyCode === 186) { // ; key
 		if (shiftPressed) {
 			typeChar(58);	// :
 		} else {
@@ -154,7 +154,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 187) { // = key
+	if (keyCode === 187) { // = key
 		if (shiftPressed) {
 			typeChar(43);	// +
 		} else {
@@ -162,7 +162,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 189) { // - key
+	if (keyCode === 189) { // - key
 		if (shiftPressed) {
 			typeChar(95);	// _
 		} else {
@@ -170,7 +170,7 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 220) { // \ key
+	if (keyCode === 220) { // \ key
 		if (shiftPressed) {
 			typeChar(124);	//  pipe |
 		} else {
@@ -178,26 +178,25 @@ window.onkeydown = function(e) {
 		}
     }
 
-	if (keyCode == 32) { //space
+	if (keyCode === 32) { //space
         typeChar(keyCode);
     }
 
-    if (keyCode == 13) { //enter
+    if (keyCode === 13) { //enter
          checkCommand(userInput + suggestion);
          userInput = "";
          cursorPos = 0;
     }
 
-	if (keyCode == 9) { //tab
+	if (keyCode === 9) { //tab
          userInput = userInput + suggestion;
 		 suggestion = "";
          cursorPos = userInput.length;
-
-		 event.stopPropagation();
+         e.preventDefault();
     }
 
     updateUserInput();
-}
+};
 
 
 function checkCommand(input) {
@@ -228,7 +227,7 @@ function checkCommand(input) {
              links();
              break;
          case "workxp":
-             workExperiance();
+             workExperience();
              break;
          case "cv":
              cv();
