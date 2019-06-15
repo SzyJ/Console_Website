@@ -11,8 +11,9 @@ function biography() {
     name = "biography";
     outputAppLine(name, "Occupation:       Undergraduate Student");
     outputAppLine(name, "University:       Newcastle University");
-    outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) 3rd Year");
-    outputAppLine(name, "Work Experience:  PCMS Software Developer");
+    outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) 4th Year");
+    outputAppLine(name, "Work Experience:  Formica GDPR Compliance Intern");
+    outputAppLine(name, "                  PCMS Software Developer");
     outputAppLine(name, "                  CEX Shop Assistant");
     outputAppLine(name, "                  EventPad Research Intern");
     outputAppLine(name, "                  Installation of low voltage appliances");
@@ -79,6 +80,8 @@ function programming() {
     outputAppLine(name, "   JavaScript  |==================================|");
     outputAppLine(name, "      C / C++  |====================================================|");
 	outputAppLine(name, " GLSL Shaders  |============================|");
+  	outputAppLine(name, "           Go  |================|");
+	outputAppLine(name, "            R  |=============|");
 }
 
 function technologies() {

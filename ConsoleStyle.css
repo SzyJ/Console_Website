@@ -41,7 +41,7 @@ div#crtEffect {
 }
 
 p , .userInput, .char, span, li{
-    color: white;
+    color: #3fff00;
     white-space: pre;
 }
 
@@ -55,13 +55,13 @@ u {
 }
 
 span.standout {
-	color: #b57920;
+	color: #c1ffb1;
 	font-weight: bold;
 }
 
 a {
     text-decoration: underline;
-    color: #6da5ff;
+    color: #00ffc4;
 }
 
 a:hover , .sugg:hover {
@@ -94,7 +94,7 @@ li.usr:before {
 }
 
 li.usr:before , #char {
-    color: #776a40;
+    color: green;
 	font-weight: bold;
 }
 
