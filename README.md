@@ -8,7 +8,7 @@ Unique design idea for a website that I use as my interactive CV!
 * *Mouse navigation*: suggested commands in the help menu, can be clicked on to enter it into the command interface.
 
 
-Try it out [here](www.szymonjackiewi.cz)!
+Try it out [here](http://www.szymonjackiewi.cz)!
 
 ## Known issues and porblems
 * Formatting does not scale well when displayed on mobile devices
