@@ -4,7 +4,7 @@ function about() {
     name = "about";
     outputAppLine(name, "Website designed and implemented enirely by me. Purely made for fun!");
     outputAppLine(name, "Original idea concept credit: <a href=\"https://baizel.dev/\" target=\"_blank\">Baizel Mathew</a>, tyty bro!");
-	outputAppLine(name, "Icons made by <a href=\"https://www.freepik.com/\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\" 			    title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>");
+    outputAppLine(name, "Icons made by <a href=\"https://www.freepik.com/\" title=\"Freepik\">Freepik</a> from <a href=\"https://www.flaticon.com/\" title=\"Flaticon\">www.flaticon.com</a> is licensed by <a href=\"http://creativecommons.org/licenses/by/3.0/\"                 title=\"Creative Commons BY 3.0\" target=\"_blank\">CC 3.0 BY</a>");
 }
 
 function biography() {
@@ -37,9 +37,9 @@ function help() {
     outputAppLine(name, "Welcome to my website! please try the following commands to learn more.");
     for (var i = 0; i < commandList.length; i++) {
         commandListString = commandListString + "<span onclick=\"checkCommand(\'" + commandList[i] + "\')\" class=\"standout sugg\">" + commandList[i] + "</span>";
-		if (i < commandList.length -1) {
-			commandListString = commandListString + " | ";
-		}
+        if (i < commandList.length -1) {
+            commandListString = commandListString + " | ";
+        }
     }
     outputAppLine(name, commandListString);
 }
@@ -47,9 +47,9 @@ function help() {
 function title() {
     name = "title";
 
-	outputAppLine(name, " __                                                ");
-	outputAppLine(name, "(_  _  \\/__  _ __      | _  _  |  o  _     o  _  _ ");
-	outputAppLine(name, "__) /_ / |||(_)| |   \\_|(_|(_  |< | (/_\\^/ | (_  /_");
+    outputAppLine(name, " __                                                ");
+    outputAppLine(name, "(_  _  \\/__  _ __      | _  _  |  o  _     o  _  _ ");
+    outputAppLine(name, "__) /_ / |||(_)| |   \\_|(_|(_  |< | (/_\\^/ | (_  /_");
 }
 
 function helloWorld() {
@@ -75,14 +75,14 @@ function programming() {
     name = "progXP";
     outputAppLine(name, "     Language  |        Beginner    Familiar   Proficient    Expert      Master");
     outputAppLine(name, "---------------+-----------+-----------+-----------+-----------+-----------+");
-    outputAppLine(name, "       VB.net  |=========================|");
+    outputAppLine(name, "           Go  |===========================================|");
+    outputAppLine(name, "      C / C++  |====================================================|");
+    outputAppLine(name, " GLSL Shaders  |============================|");
     outputAppLine(name, "         Java  |=====================================================|");
     outputAppLine(name, "   HTML & CSS  |=============================|");
     outputAppLine(name, "   JavaScript  |==================================|");
-    outputAppLine(name, "      C / C++  |====================================================|");
-	outputAppLine(name, " GLSL Shaders  |============================|");
-  	outputAppLine(name, "           Go  |================|");
-	outputAppLine(name, "            R  |=============|");
+    outputAppLine(name, "            R  |=============|");
+    outputAppLine(name, "       VB.net  |=========================|");
 }
 
 function technologies() {
@@ -136,10 +136,10 @@ function website(url, website) {
 
 
 function projectList() {
-	name = "Projects";
-	outputAppLine(name, "University 3rd Year Dissertation[Networking in Games]: <a href = \"https://github.com/SzyJ/Game_Networking_Models/raw/master/Dissertation/main.pdf\" target=\"_blank\" class=\"thumbnail\">Dissertation PDF<span><img src=\"Thumbnails/Dissertation_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/GNAT_Core\" target=\"_blank\" class=\"thumbnail\">Project Link<span><img src=\"Thumbnails/GNAT_Thumb.jpg\" /></span></a>");
+    name = "Projects";
+    outputAppLine(name, "University 3rd Year Dissertation[Networking in Games]: <a href = \"https://github.com/SzyJ/Game_Networking_Models/raw/master/Dissertation/main.pdf\" target=\"_blank\" class=\"thumbnail\">Dissertation PDF<span><img src=\"Thumbnails/Dissertation_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/GNAT_Core\" target=\"_blank\" class=\"thumbnail\">Project Link<span><img src=\"Thumbnails/GNAT_Thumb.jpg\" /></span></a>");
     outputAppLine(name, "Platforming shooter game[Unity Game Project]: <a href = \"http://szymonjackiewi.cz/Projects/Flip/\" target=\"_blank\" class=\"thumbnail\">Flip<span><img src=\"Thumbnails/Flip_Preview.gif\" /></span></a>");
-	outputAppLine(name, "Customisable bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\" class=\"thumbnail\">homepage.<span><img src=\"Thumbnails/Homepage_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
-	outputAppLine(name, "Web Design CSS tutorial website: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\" class=\"thumbnail\">CSS Tool<span><img src=\"Thumbnails/CSS_Thumb.JPG\" /></span></a>");
-	outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
+    outputAppLine(name, "Customisable bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\" class=\"thumbnail\">homepage.<span><img src=\"Thumbnails/Homepage_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
+    outputAppLine(name, "Web Design CSS tutorial website: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\" class=\"thumbnail\">CSS Tool<span><img src=\"Thumbnails/CSS_Thumb.JPG\" /></span></a>");
+    outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
 }

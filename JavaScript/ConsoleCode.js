@@ -277,6 +277,8 @@ function outputAppLine(appName, string) {
     li.className = "cmd";
     li.appendChild(document.createTextNode(string));
     ul.appendChild(li);
+
     document.getElementById("trace").lastChild.innerHTML = string;
+
     window.scrollTo(0,document.body.scrollHeight);
 }
