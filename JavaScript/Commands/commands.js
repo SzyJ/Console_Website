@@ -22,8 +22,9 @@ function biography() {
     outputAppLine(name, "Live in:          Newcastle-Upon-Tyne & Manchester");
     outputAppLine(name, "Hobbies:          Making things in Photoshop");
     outputAppLine(name, "                  Programming");
-    outputAppLine(name, "                  Drinking and brewing Tea");
-    outputAppLine(name, "                  Skiing, Snowboarding and Skydiving");
+    outputAppLine(name, "                  Various methods of brewing coffee");
+    outputAppLine(name, "                  Gong-Fu tea brewing");
+    outputAppLine(name, "                  Skiing, Snowboarding and Skydiving [Cat-A Licence]");
 }
 
 function clear() {

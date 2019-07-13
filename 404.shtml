@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <meta charset="UTF-8">
+
+      <link rel="stylesheet" type="text/css" href="ConsoleStyle.css">
+
+      <link rel="shortcut icon" type="image/png" href="icon.png"/>
+
+      <title>SzyJ: 404 Not Found</title>
+    </head>
+
+    <body>
+      <div style="color:#3fff00;font-size:40pt; text-align: center; vertical-align: middle; height:100%; line-height: 90px;">
+        404: Not found
+      </div>
+
+      <div id= "crtEffect"></div>
+    </body>
+</html>
