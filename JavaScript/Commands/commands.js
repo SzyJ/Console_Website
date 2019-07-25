@@ -24,7 +24,7 @@ function biography() {
     outputAppLine(name, "                  Programming");
     outputAppLine(name, "                  Various methods of brewing coffee");
     outputAppLine(name, "                  Gong-Fu tea brewing");
-    outputAppLine(name, "                  Skiing, Snowboarding and Skydiving [Cat-A Licence]");
+    outputAppLine(name, "                  Skiing, Snowboarding and Skydiving [A Licence]");
 }
 
 function clear() {
