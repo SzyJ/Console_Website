@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
 body {
-    background-color: black;
+    background-color: #2a422c;
     background-image: radial-gradient(
-        rgba(0, 150, 0, 0.1), black 102%
+        rgba(0, 150, 0, 0.1), #1c2619 102%
     );
 
     height: 100vh;
@@ -150,22 +150,18 @@ left: 100px;
 /*Input Blink*/
 @keyframes blink-animation {
   from {
-	-webkit-text-decoration-color: white;
-    text-decoration-color: white;
+	opacity: 1;
   }
   to {
-    -webkit-text-decoration-color: black;
-    text-decoration-color: black;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes blink-animation {
-  from {
-	-webkit-text-decoration-color: white;
-    text-decoration-color: white;
-  }
-  to {
-    -webkit-text-decoration-color: black;
-    text-decoration-color: black;
-  }
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
 }
