@@ -1,4 +1,8 @@
-# Console_Website
+```
+ __                                              
+(_  _  \/__  _ __    | _  _  |  o  _     o    _  _ 
+__) /_ / |||(_)| | \_|(_|(_  |< | (/_\^/ | o (_  /_
+```
 Unique design idea for a website that I use as my interactive CV!
 
 ## Features
