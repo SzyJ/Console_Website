@@ -47,9 +47,9 @@ function help() {
 function title() {
     name = "title";
 
-    outputAppLine(name, " __                                                ");
-    outputAppLine(name, "(_  _  \\/__  _ __      | _  _  |  o  _     o  _  _ ");
-    outputAppLine(name, "__) /_ / |||(_)| |   \\_|(_|(_  |< | (/_\\^/ | (_  /_");
+    outputAppLine(name, " __                                               ");
+    outputAppLine(name, "(_  _  \\/__  _ __    | _  _ |  o  _     o    _  _ ");
+    outputAppLine(name, "__) /_ / |||(_)| | \\_|(_|(_ |< | (/_\\^/ | o (_  /_");
 }
 
 function helloWorld() {

@@ -1,8 +1,4 @@
-```
- __                                              
-(_  _  \/__  _ __    | _  _  |  o  _     o    _  _ 
-__) /_ / |||(_)| | \_|(_|(_  |< | (/_\^/ | o (_  /_
-```
+![README_Banner](Images/README_Banner.PNG)
 Unique design idea for a website that I use as my interactive CV!
 
 ## Features
@@ -17,3 +13,4 @@ Try it out [here](http://www.szymonjackiewi.cz)!
 ## Known issues and problems
 * Formatting does not scale well when displayed on mobile devices
 * Any information about forcing the virtual keyboard to open on mobile devices, would be useful
+* After a link is clicked, pressing enter to issue another command, opens the previous link again (until the used clicks anyware but a hyperlink)
