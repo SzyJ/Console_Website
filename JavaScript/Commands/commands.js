@@ -71,18 +71,28 @@ function helloWorld() {
     }
 }
 
+function getBarChartRow(header, size) {
+    const BAR_CHAR = "&#x25AC;";
+    const PADDING = 13;
+
+    var spacesToAdd = PADDING - header.length;
+
+    return " ".repeat(spacesToAdd) + header + "  |" + BAR_CHAR.repeat(size) + "|";
+
+}
+
 function programming() {
     name = "progXP";
-    outputAppLine(name, "     Language  |        Beginner    Familiar   Proficient    Expert      Master");
+    outputAppLine(name, "         Test  |        Beginner    Familiar   Proficient    Expert      Master");
     outputAppLine(name, "---------------+-----------+-----------+-----------+-----------+-----------+");
-    outputAppLine(name, "           Go  |===========================================|");
-    outputAppLine(name, "      C / C++  |====================================================|");
-    outputAppLine(name, " GLSL Shaders  |============================|");
-    outputAppLine(name, "         Java  |=====================================================|");
-    outputAppLine(name, "   HTML & CSS  |=============================|");
-    outputAppLine(name, "   JavaScript  |==================================|");
-    outputAppLine(name, "            R  |=============|");
-    outputAppLine(name, "       VB.net  |=========================|");
+    outputAppLine(name, getBarChartRow("Go", 43));
+    outputAppLine(name, getBarChartRow("C / C++", 53));
+    outputAppLine(name, getBarChartRow("GLSL Shaders", 28));
+    outputAppLine(name, getBarChartRow("Java", 54));
+    outputAppLine(name, getBarChartRow("HTML & CSS", 29));
+    outputAppLine(name, getBarChartRow("JavaScript", 34));
+    outputAppLine(name, getBarChartRow("R", 13));
+    outputAppLine(name, getBarChartRow("VB.net", 25));
 }
 
 function technologies() {
