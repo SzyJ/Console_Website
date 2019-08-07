@@ -12,7 +12,8 @@ function biography() {
     outputAppLine(name, "University:       Newcastle University");
     outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) 4th Year");
     outputAppLine(name, "Work Experience:  Formica GDPR Compliance Intern");
-    outputAppLine(name, "                  PCMS Software Developer");
+    outputAppLine(name, "                  PCMS Java Developer");
+    outputAppLine(name, "                  IamVIP Photographer");
     outputAppLine(name, "                  CEX Shop Assistant");
     outputAppLine(name, "                  EventPad Research Intern");
     outputAppLine(name, "                  Installation of low voltage appliances");
@@ -82,7 +83,7 @@ function getBarChartRow(header, size) {
 
 function programming() {
     name = "progXP";
-    outputAppLine(name, "         Test  |        Beginner    Familiar   Proficient    Expert      Master");
+    outputAppLine(name, "     Language  |        Beginner    Familiar   Proficient    Expert      Master");
     outputAppLine(name, "---------------+-----------+-----------+-----------+-----------+-----------+");
     outputAppLine(name, getBarChartRow("Go", 43));
     outputAppLine(name, getBarChartRow("C / C++", 53));
@@ -102,11 +103,11 @@ function technologies() {
 function links() {
     name = "links";
 
-    outputAppLine(name, "<a href = \"https://www.facebook.com/szymon.jackiewicz.54\" target=\"_blank\">Facebook</a>");
-    outputAppLine(name, "<a href = \"https://github.com/SzyJ\" target=\"_blank\">Github</a>");
-    outputAppLine(name, "<a href = \"https://uk.linkedin.com/in/szymon-jackiewicz-331698100\" target=\"_blank\">LinkedIn</a>");
-    outputAppLine(name, "<a href = \"mailto:szy.jackiewicz@gmail.com\" target=\"_blank\">E-mail me</a>");
-    outputAppLine(name, "<a href = \"https://github.com/SzyJ/CV/raw/master/cv.pdf\" target=\"_blank\">Download Full CV PDF</a>");
+    outputAppLine(name, "<a href = \"https://www.facebook.com/szymon.jackiewicz.54\" target=\"_blank\"><i class=\"fa  fa-facebook-square \"></i> Facebook</a>");
+    outputAppLine(name, "<a href = \"https://github.com/SzyJ\" target=\"_blank\"><i class=\"fa  fa-github \"></i> Github</a>");
+    outputAppLine(name, "<a href = \"https://uk.linkedin.com/in/szymon-jackiewicz-331698100\" target=\"_blank\"><i class=\"fa  fa-linkedin-square \"></i> LinkedIn</a>");
+    outputAppLine(name, "<a href = \"mailto:szy.jackiewicz@gmail.com\" target=\"_blank\"><i class=\"fa  fa-envelope \"></i> E-mail me</a>");
+    outputAppLine(name, "<a href = \"https://github.com/SzyJ/CV/raw/master/cv.pdf\" target=\"_blank\"><i class=\"fa fa-briefcase \"></i> Download Full CV PDF</a>");
 }
 
 function workExperience() {
@@ -141,8 +142,6 @@ function website(url, website) {
     outputAppLine(name, "Opening...");
     window.open(url, '_blank').focus();
 }
-
-
 
 function projectList() {
     name = "Projects";
