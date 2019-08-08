@@ -72,19 +72,19 @@ function helloWorld() {
 }
 
 function getBarChartRow(header, size) {
-    const BAR_CHAR = "&#x25AC;";
+    const BAR_CHAR = "&#9552;";
     const PADDING = 13;
 
     var spacesToAdd = PADDING - header.length;
 
-    return " ".repeat(spacesToAdd) + header + "  |" + BAR_CHAR.repeat(size) + "|";
+    return " ".repeat(spacesToAdd) + header + "  &#9475;" + BAR_CHAR.repeat(size) + "|";
 
 }
 
 function programming() {
     name = "progXP";
-    outputAppLine(name, "     Language  |        Beginner    Familiar   Proficient    Expert      Master");
-    outputAppLine(name, "---------------+-----------+-----------+-----------+-----------+-----------+");
+    outputAppLine(name, "     Language  &#9475;         Beginner     Familiar     Proficient     Expert       Master");
+    outputAppLine(name, "&#9473;".repeat(18) + "&#9547;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9499;");
     outputAppLine(name, getBarChartRow("Go", 43));
     outputAppLine(name, getBarChartRow("C / C++", 53));
     outputAppLine(name, getBarChartRow("GLSL Shaders", 28));
