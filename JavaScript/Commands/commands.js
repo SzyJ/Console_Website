@@ -83,8 +83,10 @@ function getBarChartRow(header, size) {
 
 function programming() {
     name = "progXP";
-    outputAppLine(name, "     Language  &#9474;         Beginner     Familiar     Proficient     Expert       Master");
-    outputAppLine(name, "&#9473;".repeat(18) + "&#9535;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9531;" + "&#9473;".repeat(15) + "&#9499;");
+    var spacing = 12;
+
+    outputAppLine(name, "     Language  &#9474;        Beginner     Familiar    Proficient     Expert       Master");
+    outputAppLine(name, "-".repeat(15) + "&#9535;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9499;");
     outputAppLine(name, getBarChartRow("Go", 43));
     outputAppLine(name, getBarChartRow("C / C++", 53));
     outputAppLine(name, getBarChartRow("GLSL Shaders", 28));
