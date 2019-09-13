@@ -47,9 +47,15 @@ function help() {
 function title() {
     name = "title";
 
-    outputAppLine(name, " __                                               ");
-    outputAppLine(name, "(_  _  \\/__  _ __    | _  _ |  o  _     o    _  _ ");
-    outputAppLine(name, "__) /_ / |||(_)| | \\_|(_|(_ |< | (/_\\^/ | o (_  /_");
+    outputAppLine(name, "                        _    __    _____ __  __ _____  ");
+    outputAppLine(name, "                       | |  / _|  / ____|  \\/  |  __ \\ ");
+    outputAppLine(name, " ___ _____   ___      _| |_| |_  | |    | \\  / | |  | |");
+    outputAppLine(name, "/ __|_  / | | \\ \\ /\\ / / __|  _| | |    | |\\/| | |  | |");
+    outputAppLine(name, "\\__ \\/ /| |_| |\\ V  V /| |_| |   | |____| |  | | |__| |");
+    outputAppLine(name, "|___/___|\\__, (_)_/\\_/  \\__|_|    \\_____|_|  |_|_____/ ");
+    outputAppLine(name, "          __/ |                                        ");
+    outputAppLine(name, "          |___/                                         ");
+    outputAppLine(name, " ");
 }
 
 function helloWorld() {
@@ -148,8 +154,8 @@ function website(url, website) {
 function projectList() {
     name = "Projects";
     outputAppLine(name, "University 3rd Year Dissertation[Networking in Games]: <a href = \"https://github.com/SzyJ/Game_Networking_Models/raw/master/Dissertation/main.pdf\" target=\"_blank\" class=\"thumbnail\">Dissertation PDF<span><img src=\"Thumbnails/Dissertation_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/GNAT_Core\" target=\"_blank\" class=\"thumbnail\">Project Link<span><img src=\"Thumbnails/GNAT_Thumb.jpg\" /></span></a>");
-    outputAppLine(name, "Platforming shooter game[Unity Game Project]: <a href = \"http://szymonjackiewi.cz/Projects/Flip/\" target=\"_blank\" class=\"thumbnail\">Flip<span><img src=\"Thumbnails/Flip_Preview.gif\" /></span></a>");
-    outputAppLine(name, "Customisable bookmark launcher: <a href = \"homepage./index.html\" target=\"_blank\" class=\"thumbnail\">homepage.<span><img src=\"Thumbnails/Homepage_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
-    outputAppLine(name, "Web Design CSS tutorial website: <a href = \"Projects/CSS Tool/Colours and Backgrounds.html\" target=\"_blank\" class=\"thumbnail\">CSS Tool<span><img src=\"Thumbnails/CSS_Thumb.JPG\" /></span></a>");
+    outputAppLine(name, "Platforming shooter game[Unity Game Project]: <a href = \"http://szy.wtf/projects/flip/\" target=\"_blank\" class=\"thumbnail\">Flip<span><img src=\"Thumbnails/Flip_Preview.gif\" /></span></a>");
+    outputAppLine(name, "Customisable bookmark launcher: <a href = \"http://szy.wtf/projects/homepage./\" target=\"_blank\" class=\"thumbnail\">homepage.<span><img src=\"Thumbnails/Homepage_Thumb.JPG\" /></span></a> <a href = \"https://github.com/SzyJ/homepage./blob/master/README.md\" target=\"_blank\">HOW-TO</a>");
+    outputAppLine(name, "Web Design CSS tutorial website: <a href = \"http://szy.wtf/projects/CSS_Tool/Colours_and_Backgrounds.html\" target=\"_blank\" class=\"thumbnail\">CSS Tool<span><img src=\"Thumbnails/CSS_Thumb.JPG\" /></span></a>");
     outputAppLine(name, "My Github project repository: <a href = \"https://github.com/SzyJ?tab=repositories\" target=\"_blank\">Github/SzyJ</a>");
 }
