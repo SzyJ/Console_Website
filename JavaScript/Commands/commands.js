@@ -115,7 +115,7 @@ function links() {
     outputAppLine(name, "<a href = \"https://github.com/SzyJ\" target=\"_blank\"><i class=\"fa  fa-github \"></i> Github</a>");
     outputAppLine(name, "<a href = \"https://uk.linkedin.com/in/szymon-jackiewicz-331698100\" target=\"_blank\"><i class=\"fa  fa-linkedin-square \"></i> LinkedIn</a>");
     outputAppLine(name, "<a href = \"mailto:szy.jackiewicz@gmail.com\" target=\"_blank\"><i class=\"fa  fa-envelope \"></i> E-mail me</a>");
-    outputAppLine(name, "<a href = \"https://github.com/SzyJ/CV/raw/master/cv.pdf\" target=\"_blank\"><i class=\"fa fa-briefcase \"></i> Download Full CV PDF</a>");
+    outputAppLine(name, "<a href = \"https://github.com/SzyJ/CV/raw/master/Szymon_Jackiewicz_CV.pdf\" target=\"_blank\"><i class=\"fa fa-briefcase \"></i> Download Full CV PDF</a>");
 }
 
 function workExperience() {
