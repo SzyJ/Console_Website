@@ -8,10 +8,11 @@ function about() {
 
 function biography() {
     name = "biography";
-    outputAppLine(name, "Occupation:       Undergraduate Student");
-    outputAppLine(name, "University:       Newcastle University");
-    outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) 4th Year");
-    outputAppLine(name, "Work Experience:  Formica GDPR Compliance Intern");
+    outputAppLine(name, "Occupation:       Network Programmer");
+    outputAppLine(name, "Education:        Newcastle University");
+    outputAppLine(name, "Course:           Computer Science (MComp Games Engeneering) w/ Industrial Placement");
+    outputAppLine(name, "Work Experience:  Rockstar North [Current]");
+    outputAppLine(name, "                  Formica GDPR Compliance Intern");
     outputAppLine(name, "                  PCMS Java Developer");
     outputAppLine(name, "                  IamVIP Photographer");
     outputAppLine(name, "                  CEX Shop Assistant");
@@ -19,12 +20,14 @@ function biography() {
     outputAppLine(name, "                  Installation of low voltage appliances");
     outputAppLine(name, " ");
     outputAppLine(name, "Spoken Languages: English (preferred, fluent), Polish (fluent), Japanese (beginner)");
-    outputAppLine(name, "Live in:          Newcastle-Upon-Tyne & Manchester");
-    outputAppLine(name, "Hobbies:          Making things in Photoshop");
-    outputAppLine(name, "                  Programming");
+    outputAppLine(name, "Live in:          Edinburgh");
+    outputAppLine(name, "Hobbies:          Photography");
+    outputAppLine(name, "                  Photo editing and graphic design");
+    outputAppLine(name, "                  Programming (Focus on making games)");
     outputAppLine(name, "                  Various methods of brewing coffee");
     outputAppLine(name, "                  Gong-Fu tea brewing");
     outputAppLine(name, "                  Skiing, Snowboarding and Skydiving [A Licence]");
+    outputAppLine(name, "                  I walk a lot");
 }
 
 function clear() {
@@ -78,7 +81,8 @@ function helloWorld() {
 }
 
 function getBarChartRow(header, size) {
-    const BAR_CHAR = "&#9552;";
+    //const BAR_CHAR = "&#9552;";
+    const BAR_CHAR = "=";
     const PADDING = 13;
 
     var spacesToAdd = PADDING - header.length;
@@ -93,14 +97,13 @@ function programming() {
 
     outputAppLine(name, "     Language  &#9474;        Beginner     Familiar    Proficient     Expert       Master");
     outputAppLine(name, "-".repeat(15) + "&#9535;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9531;" + "-".repeat(spacing) + "&#9499;");
-    outputAppLine(name, getBarChartRow("Go", 43));
     outputAppLine(name, getBarChartRow("C / C++", 53));
+    outputAppLine(name, getBarChartRow("C#", 42));
+    outputAppLine(name, getBarChartRow("Go", 40));
     outputAppLine(name, getBarChartRow("GLSL Shaders", 28));
-    outputAppLine(name, getBarChartRow("Java", 54));
+    outputAppLine(name, getBarChartRow("Java", 42));
     outputAppLine(name, getBarChartRow("HTML & CSS", 29));
     outputAppLine(name, getBarChartRow("JavaScript", 34));
-    outputAppLine(name, getBarChartRow("R", 13));
-    outputAppLine(name, getBarChartRow("VB.net", 25));
 }
 
 function technologies() {
@@ -111,7 +114,7 @@ function technologies() {
 function links() {
     name = "links";
 
-    outputAppLine(name, "<a href = \"https://www.facebook.com/szymon.jackiewicz.54\" target=\"_blank\"><i class=\"fa  fa-facebook-square \"></i> Facebook</a>");
+    //outputAppLine(name, "<a href = \"https://www.facebook.com/szymon.jackiewicz.54\" target=\"_blank\"><i class=\"fa  fa-facebook-square \"></i> Facebook</a>");
     outputAppLine(name, "<a href = \"https://github.com/SzyJ\" target=\"_blank\"><i class=\"fa  fa-github \"></i> Github</a>");
     outputAppLine(name, "<a href = \"https://uk.linkedin.com/in/szymon-jackiewicz-331698100\" target=\"_blank\"><i class=\"fa  fa-linkedin-square \"></i> LinkedIn</a>");
     outputAppLine(name, "<a href = \"mailto:szy.jackiewicz@gmail.com\" target=\"_blank\"><i class=\"fa  fa-envelope \"></i> E-mail me</a>");
